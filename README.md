@@ -1,5 +1,5 @@
 # blog 博客
-##第一次启动工程
+## 第一次启动工程
 
 npm install 下载后端开发需要的依赖包
 
@@ -13,13 +13,13 @@ gulp sass   编译sass的*.scss文件，生成对应的css文件
 
 node server 启动项目
 
-##开发监听
+## 开发监听
 
 gulp js-watch
 
 gulp sass-watch
 
 
-##public/js_images存放脚本注入的图片，因为这类图片暂时无法cdn化
+## public/js_images存放脚本注入的图片，因为这类图片暂时无法cdn化
 
-##public/images存放样式里的图片
+## public/images存放样式里的图片
