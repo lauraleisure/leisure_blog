@@ -1,0 +1,217 @@
+@charset "UTF-8";
+html, body {
+  font-size: 16px;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "SimSun";
+  -webkit-text-size-adjust: none;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  max-width: 500px;
+  min-width: 320px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f0f0f0;
+  color: #232323; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+a:link, a:active, a:visited, a:hover {
+  text-decoration: none; }
+
+@media only screen and (min-width: 400px) and (max-width: 420px) {
+  html {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 380px) and (max-width: 400px) {
+  html {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 360px) and (max-width: 380px) {
+  html {
+    font-size: 14px; } }
+
+@media only screen and (min-width: 340px) and (max-width: 360px) {
+  html {
+    font-size: 13px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 340px) {
+  html {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 420px) {
+  html {
+    font-size: 14px; } }
+
+*, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .row {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  color: #232323;
+  padding: 0 0 3.5rem;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1rem; }
+
+.content, .scrollDiv {
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%; }
+
+.noScrollDiv {
+  height: 100%;
+  overflow: hidden; }
+
+.fixContent {
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none !important; }
+
+.clear {
+  clear: both; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #BDBDBD; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #BDBDBD; }
+
+button, input, select {
+  border: none;
+  outline: none;
+  border-radius: .286rem; }
+
+select {
+  -webkit-appearance: none;
+  border-radius: .286rem;
+  background: #f0f0f0; }
+
+input:-ms-input-placeholder {
+  color: #BDBDBD; }
+
+input::-webkit-input-placeholder {
+  color: #BDBDBD; }
+
+textarea:-ms-input-placeholder {
+  color: #9E9EA6; }
+
+textarea::-webkit-input-placeholder {
+  color: #9E9EA6; }
+
+/*半像素 start*/
+.halfpxline_after, .halfpxline_before {
+  position: relative; }
+
+.halfpxline_after:after, .halfpxline_before:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e5e5e5;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5); }
+
+.halfpxline_after:after {
+  bottom: 0;
+  -webkit-transform-origin: 0 1px;
+  transform-origin: 0 1px; }
+
+.halfpxline_before:before {
+  top: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; }
+
+/*半像素 end*/
+.flex-box {
+  display: flex; }
+
+.di-b {
+  display: block; }
+
+.di-i {
+  display: inline-block; }
+
+.jc-st {
+  justify-content: flex-start; }
+
+.jc-s {
+  justify-content: space-between; }
+
+.jc-e {
+  justify-content: flex-end; }
+
+.ai-s {
+  align-items: flex-start; }
+
+.ai-c {
+  align-items: center; }
+
+.bg-w {
+  background: #fff; }
+
+.fd-c {
+  flex-direction: column; }
+
+.fw-w {
+  flex-wrap: wrap; }
+
+.fw-nw {
+  flex-wrap: nowrap; }
+
+.green-text {
+  color: #34DB98; }
+
+.blue-text {
+  color: #17A3EA; }
+
+.red-text {
+  color: #FF7474; }
+
+.dis-text {
+  color: #9D9DA5; }
+
+.desc-text {
+  color: #9A9AA1;
+  font-size: .86rem; }
+
+.def-text {
+  color: #232323; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+/*checkBoxCom自定义组件start*/
+.checkBoxCom .box {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #A6A6A6;
+  margin-right: .5rem; }
+  .checkBoxCom .box.check {
+    background: url("/images/selected.png") 0 0 no-repeat;
+    background-size: 1rem auto; }
+
+/*checkBoxCom自定义组件end*/
