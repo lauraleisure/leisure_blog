@@ -1,11 +1,19 @@
 var express = require('express');
 var router = express.Router();
 
-var usersRouter = require('./users/pageUserRouter');
-var homeRouter = require('./home/homeRouter');
+var apiRouter = require('./api.routers');
+var homeRouter = require('./home/page.routers');
+var pageRouter = require('./page.routers');
 /* GET home page. */
-router.use('/users', usersRouter);
+/*页面路由*/
+router.use('/page', pageRouter);
+/*访问*/
 router.use('/', homeRouter);
+/*api路由*/
+router.use('/api', apiRouter);
+
+
+
 
 
 module.exports = router;

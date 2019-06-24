@@ -154,6 +154,9 @@ textarea::-webkit-input-placeholder {
 .jc-s {
   justify-content: space-between; }
 
+.jc-c {
+  justify-content: center; }
+
 .jc-e {
   justify-content: flex-end; }
 
@@ -210,8 +213,42 @@ textarea::-webkit-input-placeholder {
   height: 1.2rem;
   border: 1px solid #A6A6A6;
   margin-right: .5rem; }
-  .checkBoxCom .box.check {
-    background: url("/images/selected.png") 0 0 no-repeat;
+  .checkBoxCom .box.checked {
+    background: #17A3EA url("/images/icons/checked_w.png") center no-repeat;
     background-size: 1rem auto; }
 
 /*checkBoxCom自定义组件end*/
+/*RadioBoxCom自定义组件start*/
+.radioBoxCom .box {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #17A3EA;
+  border-radius: 50%;
+  margin-right: .5rem; }
+  .radioBoxCom .box.checked {
+    background: #17A3EA url("/images/icons/checked_w.png") center no-repeat;
+    background-size: 1rem auto; }
+
+/*RadioBoxCom自定义组件end*/
+.pageContainer {
+  position: relative; }
+
+.crumbPart {
+  position: relative;
+  /* top: 0;
+  left: 0;
+  right: 0;*/
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1rem;
+  height: 3.14rem;
+  line-height: 3.14rem;
+  background: #fff; }
+  .crumbPart .goback {
+    position: absolute;
+    left: 0;
+    width: 2rem;
+    height: 3.14rem;
+    background: url(/images/icons/icon-goback.png) 70% 50% no-repeat;
+    background-size: 1.5rem auto; }

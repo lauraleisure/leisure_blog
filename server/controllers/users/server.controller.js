@@ -1,6 +1,6 @@
 /*controller 层：用于业务处理*/
 var mongoose=require('mongoose');
-require('../modules/users.server.module');
+require('../../modules/users.server.module');
 var Users=mongoose.model('Users');
 
 module.exports={
@@ -10,7 +10,7 @@ module.exports={
         Users.save(function (err) {
             if (err) return next(err);
             return res.json(Users);
-        });
+        });i
     },
     /*列表*/
     list:function (req,res,next) {
@@ -38,7 +38,17 @@ module.exports={
     },
     get:function (req,res,next) {
         return req.json(req.users);
-    }
+    },
+    login:function (req,res,next) {
+       var username=req.body.username;
+       var password=req.body.password;
+         Users.find({"users.name":username,"users.password":password}).exec(function (err,doc) {
+           if (err) return next(err);
+           if(doc) return next(new Error('Users not found'));
+           req.users=doc;
+           return next();
+       })
+    },
 
 }
 

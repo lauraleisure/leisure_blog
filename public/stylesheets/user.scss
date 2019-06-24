@@ -1,0 +1,63 @@
+/* 用戶管理首页 start */
+.homePage{
+
+}
+/* 用戶管理首页 end */
+/*用户登录页面 start*/
+.loginPage{
+  background: url('/images/login_bg.jpg') 0 0 no-repeat;
+  background-size: 100% 100%;
+  .login-wrap{
+    padding: 3.14rem 2.1rem 0;
+    color: #fff;
+    .logo{
+      height: 6rem;
+      background: url('/images/logo_blue.png') 0 center  no-repeat;
+      background-size: 5rem auto;
+    }
+    .title_gt{
+      font-size: 1.5rem;
+      font-weight: 800;
+      padding: 0.714rem 0.3rem;
+    }
+    .title_lt{
+      font-size: 1rem;
+      font-weight: 800;
+      padding: 0 0.3rem 0.714rem;
+    }
+    .input-wrap{
+      padding:1rem 0 0 ;
+      input{
+        width: 100%;
+        height: 3.14rem;
+        line-height: 3.14rem;
+        padding: .714rem;
+      }
+      a{
+        color: #fff;
+        margin-left: 0.714rem;
+      }
+    }
+    .protocol{
+      margin: 1.5rem auto;
+    }
+    .button-wrap{
+       width: 100%;
+      height: 3.14rem;
+      margin: 0 auto;
+      button{
+        width: 100%;
+        height: 100%;
+        background: #00B8D5;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 1.07rem;
+      }
+    }
+  }
+  a{
+    color: #17A3EA;
+  }
+}
+/*用户登录页面 end*/
